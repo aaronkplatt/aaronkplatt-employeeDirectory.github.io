@@ -49,8 +49,25 @@ class SearchResults extends Component {
     event.preventDefault();
   }
 
-  //NEED TO MAKE A HANDLE BUTTON PUSHED
-  //This is going to sort employees a specific way
+  //This is going to sort employees by last name
+  handleButtonPush = () => {
+    const sortEmployees = this.state.results.sort((a, b) => {
+        if (b.name.last > a.name.last) {
+            return -1
+        }
+        if (a.name.last > b.name.last) {
+            return 1
+        }
+        return 0;
+    });
+    if (this.state.order === "DESC") {
+        sortEmployees.reverse();
+        this.setState({ order: "ASC" });
+    } else {
+        this.setState({ order: "DESC" });
+    }
+    this.setState({ results: sortEmployees })
+}
 
   render() {
     return (
@@ -64,7 +81,7 @@ class SearchResults extends Component {
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
-        <div class="EmployeeResultTable">
+        <div className="EmployeeResultTable">
         <ResultList
           results={this.state.results}
           handleButtonPush={this.handleButtonPush}

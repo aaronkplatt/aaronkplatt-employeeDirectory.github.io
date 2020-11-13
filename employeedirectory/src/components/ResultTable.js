@@ -5,6 +5,10 @@ import './styles.css'
 function ResultTable(props) {
   return (
     <table className="list-group d-flex justify-content-between">
+      {/* for sorting */}
+      {/* SORTS BY LAST NAME with a Button */}
+      <button onClick={props.handleButtonPush}>Click to Sort Last Names Alphabetaclly</button>
+      
     {/* Placeholder for table */}
       <thead>
         <tr className="EmployeePlaceholder d-flex justify-content-between align-items-center">
@@ -15,13 +19,7 @@ function ResultTable(props) {
           <td className="placeholder">Date of Birth</td>
         </tr>
       </thead>
-      {/* for sorting */}
-      {/* <tr class="sortingButton">
-      <td><button onClick={props.handleButtonPush}>Click to Sort Names Alphabetaclly</button></td>
-      </tr> */}
-      <thead>
 
-      </thead>
 
       {/* Employee Results */}
       <tbody>
@@ -29,7 +27,7 @@ function ResultTable(props) {
         <tr 
         className="EmployeeResults d-flex align-items-center justify-content-between"
         key={result.name.first + result.name.last}>
-            <td className="tableList"><img src={result.picture.large}/></td>
+            <td className="tableList"><img src={result.picture.large} alt={result.name.first + result.name.last}/></td>
             <td className="tableList">{result.name.first} {result.name.last}</td>
             <td className="tableList">{result.phone}</td>
             <td className="tableList">{result.email}</td>

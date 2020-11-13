@@ -3,10 +3,7 @@ import './styles.css'
 
 function SearchForm(props) {
   return (
-    <form 
-    className="searchBar"
-    onSubmit={props.handleFormSubmit}
-    >
+    <form className="searchBar" onSubmit={props.handleFormSubmit}>
       <div className="form-group align-items-center justify-content-start">
         <label htmlFor="search">Search For Employee's Below</label>
         <input
