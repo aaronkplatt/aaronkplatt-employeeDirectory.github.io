@@ -7,7 +7,7 @@ function ResultTable(props) {
     <table className="list-group d-flex justify-content-between">
       {/* for sorting */}
       {/* SORTS BY LAST NAME with a Button */}
-      <button onClick={props.handleButtonPush}>Click to Sort Last Names Alphabetaclly</button>
+      <button className="sortingButton" onClick={props.handleButtonPush}>Click to Sort Last Names Alphabetaclly</button>
       
     {/* Placeholder for table */}
       <thead>
