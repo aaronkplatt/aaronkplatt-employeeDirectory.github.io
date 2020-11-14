@@ -50,14 +50,11 @@ You are required to submit the following:
 
 # Unit 19 React Homework: Employee Directory
 
-Deployed Application: https://spooky-tomb-31537.herokuapp.com/
-
 ## Table of Contents
 
 * [Installation](#installation)
 * [Summary](#summary)
 * [Usage](#usage)
-* [Testing](#testing)
 * [History](#history)
 * [Credits](#credits)
 * [License](#license)
@@ -68,26 +65,21 @@ Deployed Application: https://spooky-tomb-31537.herokuapp.com/
 * Download my files in its entirety.
 * Using your command line, open the file.
 * Use command "npm install" in your terminal without quotations.
-* Use command "npm install express" in your terminal without quotations.
-* Use command "npm start" in your terminal without the quotations.
-Or open the app with this URL: https://spooky-tomb-31537.herokuapp.com/
+* Use command "npm install react" in your terminal without quotations.
+* Use command "npm run start" in your terminal without the quotations.
+Or open the Deployed app with this URL:
 
 # Summary
 
-I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise.
-
+I want to be able to view my entire employee directory at once so that I have quick access to their information.
 
 # Usage
 
 * This is strictly for educational purposes.
 
-# Testing
-
-To test this application write this following command in your command line "npm run seed". 
-
 # History
 
-https://github.com/aaronkplatt/aaronkplatt-Workout-Tracker.github.io
+https://github.com/aaronkplatt/aaronkplatt-employeeDirectory.github.io
 
 
 # Credits
